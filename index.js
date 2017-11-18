@@ -20,7 +20,7 @@ var personality_insights = new PersonalityInsightsV3({
 
 var params = {
   // Get the content items from the JSON file.
-  content_items: require('./profile.json').contentItems,
+  content_items: require('./profiles/merkel.json').contentItems,
   consumption_preferences: true,
   raw_scores: true,
   headers: {
