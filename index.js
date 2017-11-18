@@ -9,6 +9,9 @@ var port = process.env.PORT || '3002'
 var express = require('express');
 var app = express();
 
+// this is where the Ember frontend lives
+app.use(express.static(__dirname + '/frontend/dist'));
+
 var PersonalityInsightsV3 = require('watson-developer-cloud/personality-insights/v3');
 var personality_insights = new PersonalityInsightsV3({
   username: `${watsonUser}`,
@@ -56,15 +59,15 @@ politicians.forEach((k) => {
 });
 
 
-
 app.get('/api/personalities', function (req, res) {
   //console.log(personalities);
   res.send(JSON.stringify(personalities));
 })
 
-app.get('/', function (req, res) {
+app.get('/test', function (req, res) {
   res.send('Hello');
 });
+
 
 app.listen(port, function() {
   console.log(`hey, server running at ${port}`);

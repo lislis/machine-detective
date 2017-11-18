@@ -19,6 +19,11 @@ Create an .env from the example file and insert your credentials
 `$ cp env.sample .env`
 
 
+## Asset sources
+
+- Original background: https://silberius.deviantart.com/art/Detective-office-496721164
+
+
 ## Sources for politicians' speacher
 
 Please keep in mind that most of these transcripts are translations and bear natural errors.
