@@ -1,0 +1,19 @@
+{
+  "name": "human-whisperer",
+  "version": "1.0.0",
+  "description": "\"Let the human whisperer tell you all abou tyourself\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "watson"
+  ],
+  "author": "lislis",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "watson-developer-cloud": "^2.42.0"
+  }
+}
