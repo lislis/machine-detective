@@ -1,5 +1,6 @@
 # Machine Detective
 
+![Screenshot](md-screenshot.png)
 
 ## Make your own!
 
