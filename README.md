@@ -1,12 +1,11 @@
-# The fully automated Human Whisperer
-
+# Machine Detective
 
 
 ## Make your own!
 
 ## IBM Watson
 
-The Human Whisperer uses IBM Watson (the coolest and creepiest machine of all time) for personality analysis.
+Machine Detective uses IBM Watson (the coolest and creepiest machine of all time) for personality analysis.
 
 You need to sign up at IBM Cloud and create a Watson project/ service to obtain API credentials.
 
