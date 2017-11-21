@@ -10,7 +10,7 @@ var express = require('express');
 var app = express();
 
 // this is where the Ember frontend lives
-app.use(express.static(__dirname + '/frontend/dist'));
+app.use(express.static(__dirname + '/web/dist'));
 
 var PersonalityInsightsV3 = require('watson-developer-cloud/personality-insights/v3');
 var personality_insights = new PersonalityInsightsV3({

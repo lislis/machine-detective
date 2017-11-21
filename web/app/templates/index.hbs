@@ -1,0 +1,39 @@
+{{#if targetPerson}}
+
+  <p class="talk">Ah, I know this <strong class="name">"{{person}}"</strong>.</p>
+
+  <div class="report">
+    <h2>Report on <span class="name">{{person}}</span></h2>
+
+    <h3>Personality</h3>
+    <ul>
+      {{#each targetPerson.personality as |trait|}}
+        <h4>{{trait.name}} <small>{{trait.raw_score}}</small></h4>
+        <ul>
+          {{#each trait.children as |child|}}
+            {{#if (gt child.raw_score 0.7)}}
+              <li>{{child.name}}</li>
+            {{/if}}
+          {{/each}}
+        </ul>
+      {{/each}}
+    </ul>
+    <hr>
+
+    <h3>Preferences</h3>
+    {{#each targetPerson.consumption as |trait|}}
+      <h4>{{trait.name}}</h4>
+      <ul>
+        {{#each trait.consumption_preferences as |pref|}}
+          {{#if (gt pref.score 0.5)}}
+            <li>{{pref.name}}</li>
+          {{/if}}
+        {{/each}}
+      </ul>
+    {{/each}}
+
+  </div>
+
+{{else}}
+  <p class="talk" >Who is the target?</p>
+{{/if}}

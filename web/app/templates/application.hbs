@@ -1,0 +1,31 @@
+<h1>Machine Detective</h1>
+<div class="play">
+  <div class="machine">
+    <p>Good day!<br>I am Machine Detective.</p>
+    <p>I can give you information on people.</p>
+  </div>
+
+  <div class="instructions">
+    {{#link-to 'index' (query-params person=null)}}Start over{{/link-to}}
+    {{#link-to 'index' (query-params person="merkel")}}Merkel{{/link-to}}
+    {{#link-to 'index' (query-params person="macron")}}Macron{{/link-to}}
+    {{#link-to 'index' (query-params person="may")}}May{{/link-to}}
+    {{#link-to 'index' (query-params person="rajoy")}}Rajoy{{/link-to}}
+
+    {{outlet}}
+
+  </div>
+</div>
+
+<hr>
+<hr>
+<article>
+  <p>Programs and Robots like Machine Detective can figure out personal details about you, too.</p>
+  <p>You don't need to be famous for that.</p>
+  <p>All they need is a bit of text that you wrote and it doesn't matter on what topic.</p>
+</article>
+
+
+<footer>
+  You can find the code powering this on GitHub.
+</footer>
