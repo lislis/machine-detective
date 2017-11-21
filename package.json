@@ -1,7 +1,7 @@
 {
-  "name": "human-whisperer",
+  "name": "machine-detective",
   "version": "1.0.0",
-  "description": "\"Let the human whisperer tell you all abou tyourself\"",
+  "description": "\"Machine Detective finds out stuff about you and others\"",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
