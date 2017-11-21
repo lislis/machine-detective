@@ -24,7 +24,7 @@ Create an .env from the example file and insert your credentials
 - Original background: https://silberius.deviantart.com/art/Detective-office-496721164
 
 
-## Sources for politicians' speacher
+## Sources for politicians' speaches
 
 Please keep in mind that most of these transcripts are translations and bear natural errors.
 Also the speaches usually on one topic which limits the range of expression.
